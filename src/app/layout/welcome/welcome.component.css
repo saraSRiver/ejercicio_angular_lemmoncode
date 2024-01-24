@@ -1,0 +1,35 @@
+h1{
+    color:black;
+    display: block;
+    text-align: center;
+    position: relative;
+    padding-top: 90px;
+    font-family: sans-serif;
+    text-shadow: #000 9px 10px 10px;
+}
+
+h3{
+    color:black;
+    display: block;
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
+    font-family: sans-serif;
+}
+
+div{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+img{
+    max-width: 300px;
+    width: 100%;
+}
+
+@media(max-width:940px) {
+    div{
+        flex-direction: column;
+        align-items: center;
+    }
+}

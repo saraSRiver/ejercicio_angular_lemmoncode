@@ -1,0 +1,14 @@
+<h2>Login</h2>
+
+<div> Username: master@lemoncode.net<br> Password: 12345678</div>
+
+
+<label for="username">Username</label>
+<input name="username" [(ngModel)]="username" required="required" type="text">
+<span *ngIf="notUser"> El nombre de usuario es erróneo</span>
+<br><br>
+<label for="username">Password</label>
+<input name="password" [(ngModel)]="password" required="required" type="text">
+<span *ngIf="notUser"> El password es erróneo</span>
+<br><br>
+<button class="userLogButton" type="submit" (click)="loged()">Acceder</button>

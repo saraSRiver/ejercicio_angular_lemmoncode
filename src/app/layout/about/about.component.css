@@ -1,0 +1,19 @@
+*{
+    font-family: sans-serif;
+}
+
+h2{
+    margin-top: 110px;
+}
+
+.cont_about{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+
+.cont_img img{
+    width: 100%;
+}
+

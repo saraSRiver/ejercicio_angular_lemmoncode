@@ -1,0 +1,32 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <img
+    width="40"
+    alt="Angular Logo"
+    src="../assets/img/horse-logo_thumbnail.png"
+  />
+  
+    <div class="spacer">
+      <a *ngIf="!getLog()" routerLink="/welcome">Home</a>
+      <a *ngIf="!getLog()" routerLink="/login">Login</a>
+      <a *ngIf="!getLog()" routerLink="/about">Acerca de esta web</a>
+      <b *ngIf="getLog()">Hola
+         <span *ngIf="getUser() != null">{{getUser()}}</span>
+      </b>
+      <a *ngIf="getLog()" class="linkLog" routerLink="/dashboard">Dashboard</a>
+      <a *ngIf="getLog()" class="linkLog" routerLink="/crud">Crud</a>
+      <a *ngIf="getLog()" class="linkLog" routerLink="/profile">Profile</a>
+      <a *ngIf="getLog()"  class="linkLog" routerLink="/gallery">Gallery</a>
+
+      <button *ngIf="getLog()" class="userLogButton" type="button" (click)="logout()">Cerrar sesión</button>
+    </div>
+   
+</div>
+
+
+
+
+
+
+
+<router-outlet></router-outlet>
